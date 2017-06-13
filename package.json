@@ -1,0 +1,21 @@
+{
+  "name": "samples",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "config": {
+    "emsdk_env": "E:/Github/emsdk/emsdk_env.bat",
+    "html_template": "./template.html",
+    "in_file": "./src/hello.c",
+    "out_file": "./public/index.html"
+  },
+  "scripts": {
+    "wasm": "node ./scripts/compile-wasm.js",
+    "serve": "browser-sync start --server ./public --files ./public"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.12"
+  }
+}
